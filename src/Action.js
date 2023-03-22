@@ -12,7 +12,7 @@ function Action() {
         <p>Taking action against environmental injustice is not only a matter of social and environmental justice, but it also has significant implications for public health and the well-being of our planet.</p>
       </div>
 
-      <div className="m-7">
+      {/* <div className="m-7">
         <h2 className="text-2xl font-bold mb-4 text-blue-800 text-center">Environmental Justice Campaigns</h2>
         <ul className="ml-6">
           <li className="mb-4">
@@ -52,7 +52,7 @@ function Action() {
             <p>An organization working to ensure the food, water, and fish we consume is safe, accessible, and sustainably produced.</p>
           </li>
         </ul>
-      </div>
+      </div> */}
     </div>
   );
 }

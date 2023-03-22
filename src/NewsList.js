@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import NewsCard from './NewsCard';
 import { NavLink } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import TrendingArticles from './TrendingArticles';
+import {glossary} from './Glossary-terms'
 
 function NewsList() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -29,13 +31,15 @@ function NewsList() {
             <span className="font-bold text-2xl font-light font-mono">EcoJustice Hub</span>
             <img src={process.env.PUBLIC_URL + '/env-justice-logo.png'} alt="env-justice-logo" className="h-12 w-12 ml-3"/>
           </div>
-          <div className="flex-grow">
+          {/* <div className="flex-grow">
             <ul className="flex justify-end">
               <li className="px-4 py-2 text-white rounded-md hover:bg-gray-700">
-                <NavLink 
-                  className={({ isActive }) => isActive ? "nav-link-active" : "nav-link" }
-                  to="glossary">Glossary
-                </NavLink>
+                <Link
+                  to="/glossary"
+                  className="nav-link"
+                >
+                  Glossary
+                </Link>
               </li>
               <li className="px-4 py-2 text-white rounded-md hover:bg-gray-700">
                 <NavLink 
@@ -50,7 +54,7 @@ function NewsList() {
                 </NavLink>
               </li>
             </ul>
-          </div>
+          </div> */}
         </div>
       </nav>
       {/* top of page */}
