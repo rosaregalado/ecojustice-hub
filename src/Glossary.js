@@ -1,5 +1,6 @@
 import {glossary} from './Glossary-terms';
-import React, { useState } from 'react';
+import { useState } from 'react';
+import Nav from './Nav';
 
 function Glossary() {
   const [selectedTerm, setSelectedTerm] = useState(null);
@@ -13,7 +14,9 @@ function Glossary() {
   }
 
   return (
-    <div className="mx-auto p-5">
+    <div className="mx-auto">
+      {/* Nav */}
+      <Nav />
       <h2 className="text-2xl font-bold mt-8 mb-8 text-center">Glossary</h2>
       <div className="grid grid-cols-3 gap-3 p-3">
         {glossary.map((item, index) => (

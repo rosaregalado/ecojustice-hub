@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import NewsCard from './NewsCard';
-import { NavLink } from 'react-router-dom';
 import {Link} from 'react-router-dom';
 import TrendingArticles from './TrendingArticles';
-import {glossary} from './Glossary-terms'
+import {glossary} from './Glossary-terms';
+import Nav from './Nav';
 
 function NewsList() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -25,38 +25,9 @@ function NewsList() {
 
   return (
     <div>
-      <nav className="bg-blue-900 text-white p-6">
-        <div className="flex items-center justify-between flex-wrap">
-          <div className="flex items-center flex-shrink-0 mr-6">
-            <span className="font-bold text-2xl font-light font-mono">EcoJustice Hub</span>
-            <img src={process.env.PUBLIC_URL + '/env-justice-logo.png'} alt="env-justice-logo" className="h-12 w-12 ml-3"/>
-          </div>
-          {/* <div className="flex-grow">
-            <ul className="flex justify-end">
-              <li className="px-4 py-2 text-white rounded-md hover:bg-gray-700">
-                <Link
-                  to="/glossary"
-                  className="nav-link"
-                >
-                  Glossary
-                </Link>
-              </li>
-              <li className="px-4 py-2 text-white rounded-md hover:bg-gray-700">
-                <NavLink 
-                  className={({ isActive }) => isActive ? "nav-link-active" : "nav-link" }
-                  to="give">Take Action
-                </NavLink>
-              </li>
-              <li className="px-4 py-2 text-white rounded-md hover:bg-gray-700">
-                <NavLink 
-                  className={({ isActive }) => isActive ? "nav-link-active" : "nav-link" }
-                  to="/volunteer">Volunteer
-                </NavLink>
-              </li>
-            </ul>
-          </div> */}
-        </div>
-      </nav>
+      {/* nav */}
+      <Nav />
+
       {/* top of page */}
       <div class="container mx-auto py-8 px-4 sm:px-6 lg:px-8">
         <div class="max-w-3xl mx-auto">

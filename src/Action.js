@@ -1,7 +1,11 @@
+import Nav from './Nav';
+
 function Action() {
   return (
-    <div className="Action bg-gray-100 px-4 py-8">
-      <h1 className="text-2xl font-mono text-blue-800 text-center">Ways to Take Action</h1>
+    <div className="Action bg-gray-100">
+      {/* Nav */}
+      <Nav />
+      <h1 className="text-2xl font-mono text-blue-800 mt-6 text-center">Ways to Take Action</h1>
       <div className="m-7 p-3">
         <p>Environmental justice issues have far-reaching and devastating impacts on marginalized communities 
           around the world, and it is imperative that we take action to address them. According to the World Health Organization, 

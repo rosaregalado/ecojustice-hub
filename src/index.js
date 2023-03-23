@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -7,22 +7,17 @@ import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 import Glossary from './Glossary'
 import Action from './Action'
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+
+ReactDOM.render(
   <React.StrictMode>
     <Router>
       <Routes>
-        <Route path="/" element={<App />}>
-          <Route path="/glossary" element={<Glossary />} />
-          <Route path="/action" element={<Action />} />
-        </Route>
+        <Route path="/" element={<App />}></Route>
+        <Route path="/glossary" element={<Glossary />}></Route>
+        <Route path="/action" element={<Action />}></Route>
       </Routes>
-  </Router>,
-  </React.StrictMode>
-);
-
-ReactDOM.render(
-  
+    </Router>,
+  </React.StrictMode>,
   document.getElementById('root')
 );
 
