@@ -1,4 +1,5 @@
 import Nav from './Nav';
+import {Link} from 'react-router-dom';
 
 function Action() {
   
@@ -43,16 +44,17 @@ function Action() {
         <div class="mr-4">
           <select class="rounded-md border-gray-300 shadow font-bold p-2 mx-20">
             <option value="">Filter Issues</option>
-            <option value="Air pollution">Air Pollution</option>
-            <option value="Water pollution">Water Pollution</option>
-            <option value="Soil pollution">Soil Pollution</option>
-            <option value="Climate Change">Climate Change</option>
-            <option value="Waste Management">Waste Management</option>
-            <option value="Land Use">Land Use</option>
-            <option value="Industrial contamination">Industrial contamination</option>
-            <option value="Environmental racism">Environmental racism</option>
-            <option value="Food justice">Food justice</option>
-            <option value="Public health">Public health</option>
+            <option>Fighting Plastic Pollution</option>
+            <option>Brazil and Amazon Forest</option>
+            <option>Sustainable Seafood</option>
+            <option>Oceans</option>
+            <option>Deep Sea Mining</option>
+            <option>California Climate Emergency</option>
+            <option>Defending Democracy</option>
+            <option>Forests</option>
+            
+            <option>Food justice</option>
+            <option>Public health</option>
           </select>
         </div>
         {/* grid */}
@@ -82,7 +84,7 @@ function Action() {
             </p>
             <div className="my-4">
               <button className="block w-full bg-white text-black font-semibold p-2 rounded-md hover:bg-gray-300">
-                Take the Pledge
+                <Link to="/pledge">Take the Pledge</Link>
               </button>
             </div>
           </div>

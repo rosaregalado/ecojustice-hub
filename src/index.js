@@ -3,9 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom'
-import Glossary from './Glossary'
-import Action from './Action'
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import Glossary from './Glossary';
+import Action from './Action';
+import Pledge from './Pledge-action';
 
 
 ReactDOM.render(
@@ -15,6 +16,7 @@ ReactDOM.render(
         <Route path="/" element={<App />}></Route>
         <Route path="/glossary" element={<Glossary />}></Route>
         <Route path="/action" element={<Action />}></Route>
+        <Route path="/pledge" element={<Pledge />}></Route>
       </Routes>
     </Router>,
   </React.StrictMode>,
