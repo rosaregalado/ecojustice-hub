@@ -9,7 +9,7 @@ function Action() {
       <Nav />
       <h1 className="text-2xl font-mono text-blue-800 mt-6 text-center">Take Action</h1>
       <div className="m-10 p-5">
-        <p className="text-lg text-gray-800">Environmental justice issues have far-reaching and devastating impacts on marginalized communities 
+        <p className="text-lg text-gray-500">Environmental justice issues have far-reaching and devastating impacts on marginalized communities 
           around the world, and it is imperative that we take action to address them. According to the World Health Organization, 
           around 12.6 million deaths per year are attributed to environmental risks such as air pollution, chemical exposure, and water contamination. 
           Additionally, studies have shown that communities of color and low-income communities are disproportionately affected by environmental hazards and have higher rates of environmental health problems. 

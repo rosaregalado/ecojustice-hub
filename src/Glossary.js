@@ -17,7 +17,8 @@ function Glossary() {
     <div className="mx-auto">
       {/* Nav */}
       <Nav />
-      <h2 className="text-2xl font-bold mt-8 mb-8 text-center">Glossary</h2>
+      <h1 className="text-2xl font-mono text-blue-800 my-6 text-center">Glossary</h1>
+      <p class="m-10 p-5 text-lg leading-7 text-gray-500">By being informed about environmental justice terms, individuals can better understand the root causes and impacts of environmental injustices, as well as the policies and actions necessary to address them.</p>
       <div className="grid grid-cols-3 gap-3 p-3">
         {glossary.map((item, index) => (
           <div key={index} className="bg-white shadow-lg rounded-lg">
