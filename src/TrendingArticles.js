@@ -16,7 +16,7 @@ function TrendingArticles() {
 
   return (
     <div>
-      <h2 className="text-2xl font-bold mt-8">What's New?</h2>
+      <h2 className="text-2xl font-bold mt-20">What's New?</h2>
       <div className="grid grid-cols-3 gap-2 mt-4">
         {trendingArticles.map((article, index) => (
           <NewsCard key={index} article={article} />

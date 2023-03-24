@@ -40,18 +40,21 @@ function NewsList() {
         </div>
 
         <div class="max-w-5xl mx-auto mt-12">
-          <form onSubmit={handleSubmit} class="flex flex-col sm:flex-row mb-4">
-            <div class="mr-4">
-              <label for="search" class="sr-only">Search News</label>
-              <input 
-                type="text" 
-                id="search" 
-                value={searchTerm} 
-                placeholder="Search"
-                onChange={(e) => setSearchTerm(e.target.value)} 
-                class="w-full rounded-md border-gray-300 mt-2 sm:mt-0 sm:ml-2 sm:w-64 py-2 px-4"
-              />
-            </div>
+          <div className="border flex flex-col items-center">
+            <h1 className="text-xl font-bold mt-8 my-8">Stay informed about environmental issues from around the world:</h1>
+            <form onSubmit={handleSubmit} class="flex flex-col sm:flex-row mb-4">
+              <div class="mr-4">
+                <input 
+                  type="text" 
+                  id="search" 
+                  value={searchTerm} 
+                  placeholder="Search News"
+                  onChange={(e) => setSearchTerm(e.target.value)} 
+                  class="w-full rounded-md border-solid mt-2 sm:mt-0 sm:ml-2 sm:w-64 py-2 px-4"
+                />
+              </div>          
+
+            {/* select category */}
             <div class="mr-4">
               <label for="category" class="sr-only">Select a category</label>
               <select id="category" value={category} onChange={handleCategoryChange} class="rounded-md border-gray-300 mt-2 sm:mt-0 sm:ml-2 sm:w-64 py-2 px-4">
@@ -74,6 +77,8 @@ function NewsList() {
               </button>
             </div>
           </form>
+        </div>
+        
           {articles.length > 0 ? (
             <div class="flex flex-wrap justify-center">
               {articles.map(article => (
